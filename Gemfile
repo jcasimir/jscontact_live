@@ -8,4 +8,6 @@ group :development, :test do
   gem "jquery-rails"
   gem 'unicorn'
   gem 'heroku'
+  gem "nifty-generators"
 end
+gem "mocha", :group => :test
