@@ -1,6 +1,5 @@
 JSContact::Application.routes.draw do
   resources :phone_numbers
-
   resources :people
 
   # The priority is based upon order of creation:
