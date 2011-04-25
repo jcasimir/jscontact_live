@@ -24,19 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="phone_numbers_helper_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/helpers/phone_numbers_helper_spec.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/people/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+            <state line="13" column="42" selection-start="197" selection-end="237" vertical-scroll-proportion="-6.6666665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/people/show.html.erb">
+      <file leaf-file-name="_phone_numbers.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/people/_phone_numbers.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="-10.2">
+            <state line="5" column="80" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="phone_numbers_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/phone_numbers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="39" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4408397">
+            <state line="38" column="33" selection-start="964" selection-end="964" vertical-scroll-proportion="0.66412216">
               <folding />
             </state>
           </provider>
@@ -124,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/spec/models/person_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -136,9 +135,10 @@
         <option value="$PROJECT_DIR$/app/helpers/phone_numbers_helper.rb" />
         <option value="$PROJECT_DIR$/spec/helpers/phone_numbers_helper_spec.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/people/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/phone_numbers/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/people/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/people/_phone_numbers.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/phone_numbers_controller.rb" />
       </list>
     </option>
@@ -684,13 +684,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/models/person_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="68" selection-start="94" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/phone_number_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="545" selection-end="748" vertical-scroll-proportion="0.0">
@@ -740,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/people/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="-10.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="12" selection-start="417" selection-end="417" vertical-scroll-proportion="-9.8">
@@ -789,9 +775,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/people/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="42" selection-start="197" selection-end="237" vertical-scroll-proportion="-6.6666665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/people/_phone_numbers.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="80" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/phone_numbers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4408397">
+        <state line="38" column="33" selection-start="964" selection-end="964" vertical-scroll-proportion="0.66412216">
           <folding />
         </state>
       </provider>
