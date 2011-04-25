@@ -9,5 +9,6 @@ group :development, :test do
   gem 'unicorn'
   gem 'heroku'
   gem "nifty-generators"
+  gem "autotest"
 end
 gem "mocha", :group => :test

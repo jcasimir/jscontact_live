@@ -12,6 +12,12 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
+        <dependency name="autotest" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -86,18 +92,22 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] launchy (v0.3.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/launchy-0.3.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] kgio (v2.3.3, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/kgio-2.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.6.1, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rest-client-1.6.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/activemodel-3.0.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nifty-generators (v0.4.6, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/nifty-generators-0.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] autotest (v4.4.6, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/autotest-4.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ZenTest (v4.5.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/ZenTest-4.5.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mocha (v0.9.12, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/mocha-0.9.12)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.5.1, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rspec-core-2.5.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/activemodel-3.0.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/diff-lcs-1.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.9, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/arel-2.0.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/mime-types-1.16)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rake-0.8.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.5.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rspec-mocks-2.5.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rack-test-0.5.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.6, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/erubis-2.6.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.17, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/mail-2.2.17)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03@global/gems/rake-0.8.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.5.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rspec-expectations-2.5.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.26, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/tzinfo-0.3.26)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.6.14, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rack-mount-0.6.14)" level="application" />
@@ -105,8 +115,6 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] configuration (v1.2.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/configuration-1.2.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] mocha (v0.9.12, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/mocha-0.9.12)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] nifty-generators (v0.4.6, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/nifty-generators-0.4.6)" level="application" />
   </component>
 </module>
 

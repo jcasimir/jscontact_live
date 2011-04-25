@@ -18,4 +18,8 @@ describe Person do
     @person.last_name = nil
     @person.should_not be_valid
   end
+
+  it "should have a collection of phone numbers" do
+    @person.phone_numbers.should be_kind_of(Enumerable)
+  end
 end
