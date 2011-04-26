@@ -10,5 +10,7 @@ group :development, :test do
   gem 'heroku'
   gem "nifty-generators"
   gem "autotest"
+  gem 'capybara'
+  #gem 'cover_me', '>= 1.0.0.rc6'
 end
 gem "mocha", :group => :test

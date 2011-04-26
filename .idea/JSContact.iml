@@ -18,6 +18,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="capybara" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -115,6 +121,16 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] configuration (v1.2.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/configuration-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capybara (v0.4.1.2, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/capybara-0.4.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] selenium-webdriver (v0.2.0, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/selenium-webdriver-0.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json_pure (v1.5.1, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/json_pure-1.5.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/nokogiri-1.4.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rubyzip (v0.9.4, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/rubyzip-0.9.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ffi (v1.0.7, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/ffi-1.0.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] celerity (v0.8.9, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/celerity-0.8.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] childprocess (v0.1.8, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/childprocess-0.1.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] culerity (v0.2.15, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/culerity-0.2.15)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] xpath (v0.1.4, /Users/jcasimir/.rvm/gems/ree-1.8.7-2011.03/gems/xpath-0.1.4)" level="application" />
   </component>
 </module>
 
