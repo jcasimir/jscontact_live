@@ -1,7 +1,11 @@
 class SessionsController < ApplicationController
 
   def create
-    #render :text => request.env["omniauth.auth"]["user_info"]["name"]
-    @user = User.find_or_create_by_auth(request.env["omniauth.auth"])
+    begin
+      @user = User.find_or_create_by_auth(request.env["omniauth.auth"])
+    rescue Exception => e
+      render :text => e.backtrace
+    end
+    redirect_to root_url
   end
 end

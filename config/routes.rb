@@ -8,6 +8,7 @@ JSContact::Application.routes.draw do
   # first created -> highest priority.
 
   match 'auth/:provider/callback' => "sessions#create"
+  root :to => "companies#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
