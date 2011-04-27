@@ -6,11 +6,11 @@ group :development, :test do
   gem 'sqlite3'
   gem "rspec-rails"
   gem "jquery-rails"
-  gem 'unicorn'
+  #gem 'unicorn'
   gem 'heroku'
   gem "nifty-generators"
   gem "autotest"
   gem 'capybara'
   #gem 'cover_me', '>= 1.0.0.rc6'
+  gem "mocha"
 end
-gem "mocha", :group => :test
