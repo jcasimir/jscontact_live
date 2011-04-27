@@ -1,0 +1,18 @@
+<% title "Company" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Phone Numbers:</strong>
+  <%= render :partial => 'phone_numbers/phone_numbers', :object => @company.phone_numbers %>
+  <%= link_to "Add a Phone Number", new_phone_number_path(:company_id => @company), :id => "new_phone_number" %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_company_path(@company) %> |
+  <%= link_to "Destroy", @company, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", companies_path %>
+</p>

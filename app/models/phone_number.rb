@@ -1,12 +1,21 @@
 class PhoneNumber < ActiveRecord::Base
-  attr_accessible :number, :person_id
+  attr_accessible :number, :contact_type, :contact_id
 
-  belongs_to :person
+  belongs_to :contact, :polymorphic => true
 
   validates_presence_of :number
   validates_numericality_of :number
 
-  #validates_format_of :number, :with => /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/
-  #validates_format_of :number, :with => /^[0-9]*/
-
+  def self.new_from_params(params)
+    if params[:person_id]
+      contact = Person.find params[:person_id]
+    elsif params[:company_id]
+      contact = Company.find params[:company_id]
+    else
+      raise "Leave."
+    end
+    phone_number = contact.phone_numbers.new
+    phone_number.number = params[:number] if params[:number]
+    phone_number
+  end
 end

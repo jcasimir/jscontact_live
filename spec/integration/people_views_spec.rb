@@ -43,5 +43,18 @@ describe "the views for people", :type => :request do
       click_link("edit_phone_number_#{target.id}")
       current_path.should == edit_phone_number_path(target)
     end
+
+    it "should return to the person after editing a phone number" do
+      target = @person.phone_numbers.first
+      click_link("edit_phone_number_#{target.id}")
+      new_value = target.number.reverse
+      fill_in "phone_number_number", :with => new_value
+      click_button("phone_number_submit")
+      current_path.should == person_path(@person)
+      page.should have_selector("#phone_number_#{target.id}",
+                                :text => new_value)
+    end
+
+    it "should return to the person after creating a phone number"
   end
 end

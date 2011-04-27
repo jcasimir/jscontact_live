@@ -10,8 +10,8 @@ describe PhoneNumber do
     @phone_number.should be_valid
   end
 
-  it "should be associated with a person" do
-    @phone_number.person.should be_instance_of(Person)
+  it "should be associated with a contact" do
+    @phone_number.contact.should_not be_nil
   end
 
   it "should not be valid without a number" do
