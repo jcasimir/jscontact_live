@@ -2,7 +2,8 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Company do
   before(:each) do
-    @company = Company.create(:name => "Sample Company")
+    @user = User.create
+    @company = @user.companies.create(:name => "Sample Company")
   end
 
   it "should be valid with valid attributes" do
@@ -21,5 +22,9 @@ describe Company do
   it "should have a phone number after creating one" do
     @company.phone_numbers.create(:number =>"5556667777")
     @company.phone_numbers.count.should > 0
+  end
+
+  it "should be attached to a user" do
+    @company.user.should be_instance_of(User)
   end
 end

@@ -8,6 +8,8 @@ JSContact::Application.routes.draw do
   # first created -> highest priority.
 
   match 'auth/:provider/callback' => "sessions#create"
+  match "/login" => redirect('/auth/twitter'), :as => :login
+  match "/logout" => "sessions#destroy", :as => :logout
   root :to => "companies#index"
 
   # Sample of regular route:

@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :companies
+
   def self.find_or_create_by_auth(auth)
     raise ArgumentError.new("You mush supply parameters") unless auth
 

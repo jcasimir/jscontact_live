@@ -9,6 +9,14 @@
   </head>
   <body>
     <div id="container">
+      <h4>
+        <% if current_user %>
+          Logged In as <%= current_user.name %>
+          <%= link_to "logout", logout_path %>
+        <% else %>
+          <%= link_to "login", login_path %>
+        <% end %>
+      </h4>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>

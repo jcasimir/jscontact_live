@@ -15,4 +15,5 @@ group :development, :test do
   #gem 'cover_me', '>= 1.0.0.rc6'
   gem "mocha"
   gem "omniauth"
+  gem 'fabrication'
 end

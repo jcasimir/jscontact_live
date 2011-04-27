@@ -1,9 +1,6 @@
 class Company < ActiveRecord::Base
   attr_accessible :name
-
-  def foo
-    puts "Conflict!"
-  end
+  belongs_to :user
 
   include Contact
 
