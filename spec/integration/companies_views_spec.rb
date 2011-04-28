@@ -6,7 +6,7 @@ describe "the views for company", :type => :request do
 
   describe "when a user is logged in" do
     before(:each) do
-      @user = Fabricate(:user)
+      @user = Fabricate(:user_with_companies)
       login_as(@user)
     end
 
@@ -26,6 +26,7 @@ describe "the views for company", :type => :request do
 
     describe "when looking at a company" do
       before(:each) do
+        @company = @user.companies.first
         visit company_path(@company)
       end
 

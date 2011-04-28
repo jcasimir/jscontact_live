@@ -2,9 +2,7 @@ require 'spec_helper'
 
 describe User do
   before(:each) do
-    @fake_auth = {"provider" => "fake_provider",
-                 "uid" => "1",
-                 "user_info" => {"name" => "Fake Person"}}
+    @fake_auth = fake_auth_credentials
   end
 
   it "should create a user when there is a new provider/uid pair" do

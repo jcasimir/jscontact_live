@@ -7,3 +7,9 @@ def login_as(user)
   }
   visit(login_path)
 end
+
+def fake_auth_credentials
+  {"provider" => "fake_provider",
+                 "uid" => "1",
+                 "user_info" => {"name" => "Fake Person"}}
+end
