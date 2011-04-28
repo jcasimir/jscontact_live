@@ -1,11 +1,11 @@
 <% title "Companies" %>
 
-<table>
+<table id="companies">
   <tr>
     <th>Name</th>
   </tr>
   <% for company in @companies %>
-    <tr>
+    <tr class="company">
       <td><%= company.name %></td>
       <td><%= link_to "Show", company %></td>
       <td><%= link_to "Edit", edit_company_path(company) %></td>

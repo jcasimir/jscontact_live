@@ -12,7 +12,7 @@ describe "the views for company", :type => :request do
 
     describe "when looking at the list of companies" do
       before(:each) do
-        visit companies_index
+        visit companies_path
       end
 
       it "should show the companies for the current user" do
@@ -21,7 +21,24 @@ describe "the views for company", :type => :request do
         end
       end
 
-      it "should not show the companies for another user"
+      describe "when there are multiple users in the system" do
+        before(:all) do
+          @other_user = Fabricate(:user_with_companies)
+          visit companies_path
+        end
+
+        it "should not show the companies for another user" do
+          @other_user.companies.each do |company|
+            page.should_not have_content(company.name)
+          end
+        end
+
+        it "should only show the companies associated with this user" do
+          within("#companies") do
+            page.all(".company").count.should == @user.companies.count
+          end
+        end
+      end
     end
 
     describe "when looking at a company" do

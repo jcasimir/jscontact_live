@@ -5,5 +5,5 @@ Fabricator(:user) do
 end
 
 Fabricator(:user_with_companies, :from => :user) do
-  companies(:count => 3){|user, i| Fabricate(:company, :user => user)}
+  companies!(:count => 3){|user, i| Fabricate(:company, :user => user)}
 end
